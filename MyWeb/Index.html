@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rdev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  <nav>
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+       Rdev
+    </div>
+    <div class="nav-items">
+       <li><a href="Index.html">Home</a></li>
+       <li><a href="Explorar.html">Explorar</a></li>
+       <li><a href="Rwiki.html">Rwiki</a></li>
+       <li><a href="Otros.html">Otros</a></li>
+       <li><a href="Contacto.html">Contacto</a></li>
+    </div>
+
+ </nav>
+
+ </div>
+ <!----info-->
+<!-- partial:index.partial.html -->
+<main>
+  <section class="slides"> 
+    
+  
+  
+    <section class="slide is-active">
+      <div class="slide__content">
+        <figure class="slide__figure"><div class="slide__img" style="background-image: url(images/otros/aaaaaaa.jpg)"></div></figure>
+        
+        <header class="slide__header">
+          <h2 class="slide__title">
+            <span class="title-line"><span>TOMA RIESGOS Y </span></span>
+            <span class="title-line"><span>PREPARATE PARA FALLAR</span></span>
+          </h2>
+        </header>
+      </div>
+    </section>
+
+  </section>
+  </main>
+  <!-- partial -->
+    
+  
+ <h1><span>Tec</span></h1>
+ <div class="contenedor">
+   
+    <p class="parrafo">
+      Antes de comprender qué es el desarrollo tecnológico hay que entender muy bien qué se considera tecnología.
+      La Real Academia Española la define como el “conjunto de teorías que permiten el aprovechamiento práctico del conocimiento científico”.
+      Así que hablar de tecnología no es hablar exclusivamente de teléfonos inteligentes o de internet, es mucho más, son todos los adelantos que 
+      facilitan las actividades que frecuentemente realiza la humanidad.
+      Por ejemplo, hoy día la tecnología permite realizar diagnósticos médicos precisos, prevenir enfermedades, imprimir en papel, crear robots, 
+      coches inteligentes, nanotecnología, comunicarse con personas que estén al otro lado del mundo a través de una videollamada o de un simple 
+      mensaje, y por supuesto crear Smartphone y ordenadores de última generación.
+   </p>
+ </div>
+ 
+ <!---imagenes-->
+ <div >
+  
+</div>
+
+<h1><span>Temas Populares</span></h1>
+
+<div class="img-gallery">
+   <p><a href="Csharp.html"><img src=" images/csharp.png" alt=""></a>La Evolución que Microsoft realizó de este lenguaje, tomando lo mejor de los lenguajes C y C++</p>
+   <p><a href="Html.html"><img src=" images/html.png" alt=""></a><br><br>La tecnología es una respuesta al deseo del hombre de transformar el medio </p>
+   <p><a href="Sql.html"><img src=" images/sql.png" alt=""></a><br><br>Se designa como ‘la web’ al sistema de gestión de información más popular para la trasmisión de datos a través de internet.</p>
+   <p><a href="Java.html"><img src=" images/java.png"alt=""></a> <br><br>El lenguaje por el cual funcionan las computadoras, comprende un conjunto de instrucciones y datos a ser procesados automáticamente.</a></p>
+
+</div>
+<script src="script.js"></script>
+<h1><span>Te podria interesar</span></h1>
+
+<!-- partial:index.partial.html -->
+<body>
+   <div class="container">
+       <div class="card">
+           <div class="face face1">
+               <div class="content">
+                   <img src="images/intereses/web.png">
+                   <h3>La Web</h3>
+               </div>
+           </div>
+           <div class="face face2">
+               <div class="content">
+                   <p>
+                     Se designa como ‘la web’ al sistema de gestión de información 
+                     más popular para la trasmisión de datos a través de internet.
+                   </p>
+                       <a href="#">Leer Mas</a>
+               </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="face face1">
+               <div class="content">
+                   <img src="images/intereses/tec.png">
+                   <h3>Tecnologia</h3>
+               </div>
+           </div>
+           <div class="face face2">
+               <div class="content">
+                   <p>
+                     La tecnología es una respuesta al deseo
+                      del hombre de transformar el medio a la 
+                      evolucion
+                      y mejorar la calidad de nuestra vida
+                   </p>
+                       <a href="#">Leer Mas</a>
+               </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="face face1">
+               <div class="content">
+                   <img src="images/intereses/code.png">
+                   <h3>Desarrollo</h3>
+               </div>
+           </div>
+           <div class="face face2">
+               <div class="content">
+                   <p>
+                     Un lenguaje de programación que 
+                     le proporciona a un
+                     programador, la capacidad de escribir una serie de 
+                     instrucciones 
+                   </p>
+                       <a href="#">Leer Mas</a>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+<!-- partial -->
+
+
+ 
+ <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+ </script>
+<br><br>
+<div class="caja">
+   <div id="barraInferior">
+      &#9400 Rdev2022
+    </div>
+</div>
+  
+</body>
+</html>
